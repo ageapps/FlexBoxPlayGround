@@ -1,0 +1,23 @@
+{
+  "name": "flexboxplayground",
+  "version": "1.0.0",
+  "description": "flexbox css display property playground",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ageapps/FlexBoxPlayGround.git"
+  },
+  "author": "Adrián García Espinosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ageapps/FlexBoxPlayGround/issues"
+  },
+  "homepage": "https://github.com/ageapps/FlexBoxPlayGround#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0"
+  }
+}

@@ -69,18 +69,37 @@ $(function() {
 
         // Fill space
         if ($('#fill').is(":checked")) {
-            $(".box").css("flex", "1");
-        } else {
-            $(".box").css("flex", "none");
+            for (var i = 1; i <= 10; i++) {
+                var flex = $("#proportion" + i).val("1");
+            }
+            $('#fill').prop("checked", false);
         }
 
-        // Order
+        // Reset proportion
+        if ($('#reset_proportion').is(":checked")) {
+            for (var i = 1; i <= 10; i++) {
+                var flex = $("#proportion" + i).val("0");
+            }
+            $('#reset_proportion').prop("checked", false);
+        }
+
+
         for (var i = 1; i <= 10; i++) {
             var order = $("#box" + i).val();
             var box_align = $("#align" + i).val();
-            $(".box" + i).css("order", order);
-            $(".box" + i).css("align-self", box_align);
-        }
+            var flex = $("#proportion" + i).val();
 
+            // Order
+            $(".box" + i).css("order", order);
+            // Align
+            $(".box" + i).css("align-self", box_align);
+            // Proportion
+            if (flex > 0) {
+                $(".box" + i).css("flex", flex);
+            } else {
+                $(".box" + i).css("flex", "none");
+            }
+
+        }
     });
 });

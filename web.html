@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./build/web_style.css" media="screen" title="no title" charset="utf-8">
+    <title>Responsive FlexBox Example</title>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <h1><a href="#">Responsive FlexBox Example</a></h1>
+        </header>
+
+        <nav class="flex_nav">
+            <a href="#" class="toggleNav"><i class="fa fa-bars"></i> Menu</a>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+                <li><a href="#">Item 6</a></li>
+                <li class="social"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-github"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </nav>
+
+        <section class="container slider">
+            <img src="http://lorempixel.com/1200/600/food" />
+        </section>
+
+        <section class="container details">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <section class="container pricing">
+            <div class="plan plan1">
+                <h2>Plan 1</h2>
+                <p>Lorem ipsum dolor</p>
+                <ul class="features">
+                  <li>Lorem</li>
+                  <li>ipsum</li>
+                  <li>dolor</li>
+                    <p class="price">Free</p>
+                    <a href="#" class="button">See more <i class="fa fa-arrow-right"></i></a>
+                </ul>
+            </div>
+            <div class="plan plan2">
+                <h2>Plan 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <ul class="features">
+                    <li>Lorem</li>
+                    <li>ipsum</li>
+                    <li>dolor</li>
+                    <p class="price">50€</p>
+                    <a href="#" class="button">See more <i class="fa fa-arrow-right"></i></a>
+                </ul>
+            </div>
+            <div class="plan plan3">
+                <h2>Plan 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                <ul class="features">
+                  <li>Lorem</li>
+                  <li>ipsum</li>
+                  <li>dolor</li>
+                    <p class="price">100€</p>
+                    <a href="#" class="button">See more <i class="fa fa-arrow-right"></i></a>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container contact">
+            <form action="">
+                <input type="text" placeholder="Your name" name="name" />
+                <input type="email" placeholder="Your e-mail" name="" />
+                <input id="submit" type="submit" name="name" value="Contact">
+            </form>
+        </section>
+        <a href="./index.html" class="button">Go to Playground <i class="fa fa-arrow-up"></i></a>
+
+        <footer class="container">
+            <p>
+                &copy; AGE apps
+            </p>
+        </footer>
+    </div>
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $(".toggleNav").click(function() {
+            $(".flex_nav ul").toggleClass("open");
+        });
+    });
+</script>
+
+</html>

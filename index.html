@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="build/style.css">
     <title>FlexBox Intro</title>
 </head>
 
@@ -88,128 +88,214 @@
                 Set fixed width
                 <input type="checkbox" id="box_width" value="box_width">
             </p>
-            <p>
-                Fill space
-                <input type="checkbox" id="fill" value="fill">
-            </p>
         </div>
         <div class="col col3">
             <p>
                 BOX order and alignment:
             </p>
-            <p> Box 1:
-                <input type="number" id="box1" min="-10" max="10" value="0">
-                <select id="align1">
-                    <option value="none">None</option>
-                    <option value="stretch">Stretch</option>
-                    <option value="flex-start">Start</option>
-                    <option value="flex-end">End</option>
-                    <option value="center">Center</option>
-                </select>
-              </p>
-              <p>
-                Box 2:
-                <input type="number" id="box2" min="-10" max="10" value="0">
-                <select id="align2">
-                    <option value="none">None</option>
-                    <option value="stretch">Stretch</option>
-                    <option value="flex-start">Start</option>
-                    <option value="flex-end">End</option>
-                    <option value="center">Center</option>
-                </select>
-              </p>
-              <p>
-                Box 3:
-                <input type="number" id="box3" min="-10" max="10" value="0">
-                <select id="align3">
-                    <option value="none">None</option>
-                    <option value="stretch">Stretch</option>
-                    <option value="flex-start">Start</option>
-                    <option value="flex-end">End</option>
-                    <option value="center">Center</option>
-                </select>
-              </p>
-              <p>
-                Box 4:
-                <input type="number" id="box4" min="-10" max="10" value="0">
-                <select id="align4">
-                    <option value="none">None</option>
-                    <option value="stretch">Stretch</option>
-                    <option value="flex-start">Start</option>
-                    <option value="flex-end">End</option>
-                    <option value="center">Center</option>
-                </select>
-              </p>
-              <p>
-                Box 5:
-                <input type="number" id="box5" min="-10" max="10" value="0">
-                <select id="align5">
-                    <option value="none">None</option>
-                    <option value="stretch">Stretch</option>
-                    <option value="flex-start">Start</option>
-                    <option value="flex-end">End</option>
-                    <option value="center">Center</option>
-                </select>
-              </p>
-              <p>
-                Box 6:
-                <input type="number" id="box6" min="-10" max="10" value="0">
-                <select id="align6">
-                    <option value="none">None</option>
-                    <option value="stretch">Stretch</option>
-                    <option value="flex-start">Start</option>
-                    <option value="flex-end">End</option>
-                    <option value="center">Center</option>
-                </select>
-              </p>
-              <p>
-                Box 7:
-                <input type="number" id="box7" min="-10" max="10" value="0">
-                <select id="align7">
-                    <option value="none">None</option>
-                    <option value="stretch">Stretch</option>
-                    <option value="flex-start">Start</option>
-                    <option value="flex-end">End</option>
-                    <option value="center">Center</option>
-                </select>
-              </p>
-              <p>
-                Box 8:
-                <input type="number" id="box8" min="-10" max="10" value="0">
-                <select id="align8">
-                    <option value="none">None</option>
-                    <option value="stretch">Stretch</option>
-                    <option value="flex-start">Start</option>
-                    <option value="flex-end">End</option>
-                    <option value="center">Center</option>
-                </select>
-              </p>
-              <p>
-                Box 9:
-                <input type="number" id="box9" min="-10" max="10" value="0">
-                <select id="align9">
-                    <option value="none">None</option>
-                    <option value="stretch">Stretch</option>
-                    <option value="flex-start">Start</option>
-                    <option value="flex-end">End</option>
-                    <option value="center">Center</option>
-                </select>
-              </p>
-              <p>
-                Box 10:
-                <input type="number" id="box10" min="-10" max="10" value="0">
-                <select id="align10">
-                    <option value="none">None</option>
-                    <option value="stretch">Stretch</option>
-                    <option value="flex-start">Start</option>
-                    <option value="flex-end">End</option>
-                    <option value="center">Center</option>
-                </select>
+            <table>
+                <tr>
+                    <th>Box</th>
+                    <th>Order</th>
+                    <th>Alignment</th>
+                    <th>Proportion</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <input type="number" id="box1" min="-10" max="10" value="0">
+                    </td>
+                    <td>
+                        <select id="align1">
+                            <option value="none">None</option>
+                            <option value="stretch">Stretch</option>
+                            <option value="flex-start">Start</option>
+                            <option value="flex-end">End</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" id="proportion1" min="-10" max="10" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <input type="number" id="box2" min="-10" max="10" value="0">
+                    </td>
+                    <td>
+                        <select id="align2">
+                            <option value="none">None</option>
+                            <option value="stretch">Stretch</option>
+                            <option value="flex-start">Start</option>
+                            <option value="flex-end">End</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" id="proportion2" min="-10" max="10" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <input type="number" id="box3" min="-10" max="10" value="0">
+                    </td>
+                    <td>
+                        <select id="align3">
+                            <option value="none">None</option>
+                            <option value="stretch">Stretch</option>
+                            <option value="flex-start">Start</option>
+                            <option value="flex-end">End</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" id="proportion3" min="-10" max="10" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <input type="number" id="box4" min="-10" max="10" value="0">
+                    </td>
+                    <td>
+                        <select id="align4">
+                            <option value="none">None</option>
+                            <option value="stretch">Stretch</option>
+                            <option value="flex-start">Start</option>
+                            <option value="flex-end">End</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" id="proportion4" min="-10" max="10" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <input type="number" id="box5" min="-10" max="10" value="0">
+                    </td>
+                    <td>
+                        <select id="align5">
+                            <option value="none">None</option>
+                            <option value="stretch">Stretch</option>
+                            <option value="flex-start">Start</option>
+                            <option value="flex-end">End</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" id="proportion5" min="-10" max="10" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                        <input type="number" id="box6" min="-10" max="10" value="0">
+                    </td>
+                    <td>
+                        <select id="align6">
+                            <option value="none">None</option>
+                            <option value="stretch">Stretch</option>
+                            <option value="flex-start">Start</option>
+                            <option value="flex-end">End</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" id="proportion6" min="-10" max="10" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>
+                        <input type="number" id="box7" min="-10" max="10" value="0">
+                    </td>
+                    <td>
+                        <select id="align7">
+                            <option value="none">None</option>
+                            <option value="stretch">Stretch</option>
+                            <option value="flex-start">Start</option>
+                            <option value="flex-end">End</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" id="proportion7" min="-10" max="10" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>
+                        <input type="number" id="box8" min="-10" max="10" value="0">
+                    </td>
+                    <td>
+                        <select id="align8">
+                            <option value="none">None</option>
+                            <option value="stretch">Stretch</option>
+                            <option value="flex-start">Start</option>
+                            <option value="flex-end">End</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" id="proportion8" min="-10" max="10" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>
+                        <input type="number" id="box9" min="-10" max="10" value="0">
+                    </td>
+                    <td>
+                        <select id="align9">
+                            <option value="none">None</option>
+                            <option value="stretch">Stretch</option>
+                            <option value="flex-start">Start</option>
+                            <option value="flex-end">End</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" id="proportion9" min="-10" max="10" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>
+                        <input type="number" id="box10" min="-10" max="10" value="0">
+                    </td>
+                    <td>
+                        <select id="align10">
+                            <option value="none">None</option>
+                            <option value="stretch">Stretch</option>
+                            <option value="flex-start">Start</option>
+                            <option value="flex-end">End</option>
+                            <option value="center">Center</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" id="proportion10" min="-10" max="10" value="0">
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Fill space equaly in row
+                <input type="checkbox" id="fill" value="fill">
+            </p>
+
+            <p>
+                Reset proportions
+                <input type="checkbox" id="reset_proportion" value="fill">
             </p>
         </div>
     </div>
     <div class="button">
-    <button id="submit">Apply</button>
+        <a id="submit" >Apply</a>
     </div>
     <div class="playground">
         <div class="container">
@@ -225,6 +311,10 @@
             <div class="box box10">10</div>
         </div>
     </div>
+    <div class="button">
+        <a href="./web.html">See Responsive Example</a>
+    </div>
+
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
