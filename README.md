@@ -31,6 +31,6 @@ $ gulp watch
 [responsive web demo]:http://ageapps.cf/flexBoxPlayground/web.html
 [flexbox.io]:http://flexbox.io
 [css-tricks]:https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-[Wes Bos]:http://wesbos.com
+[Wes Bos]:https://twitter.com/wesbos
 [Gulp]:http://gulpjs.com
 [Autoprefixer]:https://www.npmjs.com/package/gulp-autoprefixer/
